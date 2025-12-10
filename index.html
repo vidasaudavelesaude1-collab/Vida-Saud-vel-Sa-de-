@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <!-- Título Principal -->
+    <title>Vida Saudável é Saúde</title>
+    <meta name="description" content="Seu assistente pessoal de nutrição. Tire fotos dos alimentos, receba análises de calorias e planos personalizados com Inteligência Artificial.">
+    
+    <!-- Meta Tags para Redes Sociais (WhatsApp, Instagram, Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Vida Saudável é Saúde" />
+    <meta property="og:description" content="Descubra os nutrientes do seu prato e alcance suas metas com IA. Experimente agora!" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=1000&auto=format&fit=crop" />
+    <meta property="og:site_name" content="Vida Saudável é Saúde" />
+    
+    <!-- Cor do Tema (Barra do Navegador Mobile) -->
+    <meta name="theme-color" content="#10b981" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#10b981">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Custom Scrollbar for sleek look */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+
+      /* Custom Animations */
+      @keyframes slide-up {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      .animate-slide-up {
+        animation: slide-up 0.5s ease-out forwards;
+      }
+
+      @keyframes fade-in {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.5s ease-out forwards;
+      }
+
+      @keyframes bounce-slow {
+        0%, 100% { transform: translateY(-5%); }
+        50% { transform: translateY(5%); }
+      }
+      .animate-bounce-slow {
+        animation: bounce-slow 3s infinite ease-in-out;
+      }
+      
+      /* Safe Area for iPhones */
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div id="root"></div>
+  </body>
+</html>

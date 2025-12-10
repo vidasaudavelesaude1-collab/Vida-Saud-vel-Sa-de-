@@ -1,0 +1,7 @@
+{
+  "name": "Vida Saudável é Saúde",
+  "description": "App gratuito de nutrição com IA e acesso ao nosso catálogo exclusivo.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
